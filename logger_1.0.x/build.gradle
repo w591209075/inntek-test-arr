@@ -37,7 +37,7 @@ allprojects {
     repositories {
         google()
         jcenter()
-        maven { url "https://raw.githubusercontent.com/wkangle/KLUtils/master" }
+        maven { url "https://raw.githubusercontent.com/w591209075/inntek-test-arr/master" }
     }
 }
 
