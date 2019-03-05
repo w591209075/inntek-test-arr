@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <!--用户编码 -->
+
+	<CheckBox
+	    android:id="@+id/Chb"
+    	android:layout_width="50dp"
+    	android:layout_height="50dp"
+    	android:focusable="false"	
+  		android:checked="false"  
+   		android:clickable="false"
+  		android:focusableInTouchMode="false" >   
+	</CheckBox>
+    <TextView
+        android:id="@+id/Meidcode"
+        android:layout_width="80dp"
+        android:layout_height="50dp" 
+        android:text="DATA"/>
+    <!-- 设备ID -->
+
+    <TextView
+        android:id="@+id/Platform"
+        android:layout_width="20dp"
+        android:layout_height="50dp"
+        android:text="DATA"/> />
+    <!-- 系统类型 -->
+
+    <TextView
+        android:id="@+id/VersionNo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="DATA"/> />
+    <!-- 版本号 -->
+
+    <TextView
+        android:id="@+id/LogLevel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="DATA"/> />
+    <!-- 日志类型 -->
+
+    <TextView
+        android:id="@+id/SyncStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:text="DATA"/> />
+  
+</LinearLayout>

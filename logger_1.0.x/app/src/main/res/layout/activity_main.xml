@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical">
+    <TextView
+	    android:id="@+id/txt_show"
+	    android:layout_width="wrap_content"
+        android:layout_height="25dp">    
+	</TextView>
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+    <!--用户编码 -->
+	<CheckBox
+	    android:id="@+id/cb_all"
+    	android:layout_width="50dp"
+    	android:layout_height="25dp"
+    	android:focusable="false"
+  		android:clickable="false"
+  		android:checked="false"  
+  		android:focusableInTouchMode="false" >   
+	</CheckBox>
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="25dp" 
+        android:text="设备编号"/>
+    <!-- 设备ID -->
+    <TextView
+        android:layout_width="20dp"
+        android:layout_height="25dp"
+        android:text="平台"/> 
+    <!-- 系统类型 -->
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:text="版本号"/>
+    <!-- 版本号 -->
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:text="日志等级"/> 
+    <!-- 日志类型 -->
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:text="同步状态"/> 
+</LinearLayout>
+	
+    <ListView
+       android:layout_width="wrap_content"      
+		android:layout_height="0dp"		 
+		android:layout_weight="1"
+        android:id="@+id/listview" >
+        
+    </ListView>
+      <LinearLayout
+       android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:gravity="bottom">
+
+        <Button
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:onClick="ADD"
+            android:text="ADD" />
+
+        <Button
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:onClick="UPLOAD"
+            android:text="UPLOAD" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:onClick="DELETE"
+            android:text="DELETE" />
+    </LinearLayout> 
+</LinearLayout>
